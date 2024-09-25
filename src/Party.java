@@ -12,7 +12,7 @@ public class Party {
         System.out.print("Please enter your party affiliation using R, D, or I: ");
 
         // no verification was done to ensure it was a string because 'Other' is a valid choice
-        // and 'Other' could be anything
+        // and 'Other' could be defined by anything
 
             party = in.nextLine(); // grab user input
             if (Objects.equals(party, "R")){     //if input is 'R'
