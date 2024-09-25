@@ -1,7 +1,7 @@
-import java.util.Objects; // import Objects
+
 import java.util.Scanner; // import Scanner
 
-// Objects was added based on the recommendation of the program. Cannot use 'party=="R"'
+
 
 public class Party {
     public static void main (String[] args){
@@ -15,13 +15,13 @@ public class Party {
         // and 'Other' could be defined by anything
 
             party = in.nextLine(); // grab user input
-            if (Objects.equals(party, "R")){     //if input is 'R'
+            if (party.equals("R")){     //if input is 'R'
                 System.out.println("You get a Republican Elephant! ");
             }
-            else if(Objects.equals(party, "D")){  //if input is 'D'
+            else if(party.equals("D")){  //if input is 'D'
                 System.out.println("You get a Democratic Donkey! ");
             }
-            else if(Objects.equals(party, "I")){  //if input is 'I'
+            else if(party.equals("I")){  //if input is 'I'
                 System.out.println("You get an Independent Man! ");
             }
             else{ //if input is anything else
