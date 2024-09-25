@@ -1,9 +1,11 @@
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.Objects; // import Objects
+import java.util.Scanner; // import Scanner
+
+// Objects was added based on the recommendation of the program. Cannot use 'party=="R"'
 
 public class Party {
     public static void main (String[] args){
-       Scanner in = new Scanner(System.in);
+       Scanner in = new Scanner(System.in); // new instance of Scanner
 
        String party =""; // define variables
 
@@ -12,7 +14,7 @@ public class Party {
         // no verification was done to ensure it was a string because 'Other' is a valid choice
         // and 'Other' could be anything
 
-            party = in.nextLine();
+            party = in.nextLine(); // grab user input
             if (Objects.equals(party, "R")){     //if input is 'R'
                 System.out.println("You get a Republican Elephant! ");
             }
